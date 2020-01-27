@@ -2,6 +2,7 @@ import static spark.Spark.*;
 
 public class App {
     public static void main(String[] args) {
+        staticFileLocation("/public");
         get("/hello", (request, response) ->
                 "<!DOCTYPE html>" +
                         "<html>" +
@@ -21,5 +22,15 @@ public class App {
                         "</body>" +
                         "</html>"
         );
-    }
-}
+
+        get("/favorite_photos", (request, response) ->
+                "<!DOCTYPE html>" +
+                        "<html>" +
+                        "<head>" +
+                        "<title>Hello Friend!</title>" +
+                        "<link rel='stylesheet'  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>" +
+                        "</head>" +
+                        "<body>" +
+                        "<h1>Favorite Traveling Photos</h1>" +
+                        "<ul>" +
+                        "<li><img src='/images/photo-1572715177185-800e607f2c4b.jpeg' alt='A photo of a mountain range.'/></li>" + "<li><img src='/main/resources/public/images/photo-1549409466-0d293308285a.jpeg' alt='A photo of a swamp.'/></li>" + "</ul>" + "</body>" + "</html>" ); } }
