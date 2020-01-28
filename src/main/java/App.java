@@ -33,4 +33,4 @@ public class App {
                         "<body>" +
                         "<h1>Favorite Traveling Photos</h1>" +
                         "<ul>" +
-                        "<li><img src='/images/photo-1572715177185-800e607f2c4b.jpeg' alt='A photo of a mountain range.'/></li>" + "<li><img src='/main/resources/public/images/photo-1549409466-0d293308285a.jpeg' alt='A photo of a swamp.'/></li>" + "</ul>" + "</body>" + "</html>" ); } }
+                        "<li><img src='../resources/public/images/photo-1549409466-0d293308285a.jpeg' alt='A photo of a mountain range.'/></li>" + "<li><img src='/images/photo-1549409466-0d293308285a.jpeg' alt='A photo of a swamp.'/></li>" + "</ul>" + "</body>" + "</html>" ); } }
